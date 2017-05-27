@@ -23,6 +23,6 @@ public class FoodController {
 	
 	@GetMapping("/put")
 	public FoodBean update(){
-		return foodService.updatfeFood();
+		return foodService.updateFood();
 	}
 }

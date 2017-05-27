@@ -15,7 +15,6 @@
 	</parent>
 	
 	<modules>
-		
 		<module>dubbox-boot-api</module>
 		<module>dubbox-boot-food</module>
 		<module>dubbox-boot-rice</module>

@@ -8,7 +8,7 @@
   <artifactId>dubbox-boot-rice</artifactId>
   
   <dependencies>
-  
+      <!--因为api项目中已经有了所有的依赖，在此就自动引入了这些依赖，这样就简洁一些-->
   	<dependency>
 		<groupId>com.janita</groupId>
 	    <artifactId>dubbox-boot-api</artifactId>
