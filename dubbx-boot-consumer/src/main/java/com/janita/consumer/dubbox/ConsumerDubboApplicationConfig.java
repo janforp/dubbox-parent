@@ -1,25 +1,22 @@
-package com.janita.rice.dubbox;
+package com.janita.consumer.dubbox;
 
 import com.alibaba.dubbo.config.ApplicationConfig;
 import com.alibaba.dubbo.config.ProtocolConfig;
-import com.janita.api.dubbox.DubboBaseConfig;
+import com.janita.api.dubbox.CommonDubboBaseConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * Created by Janita on 2017-05-27 09:06
- * 该模块的 dubbo 统一配置
- * 1.applicationName
- * 2.applicationPort
+ * Created by Janita on 2017-05-27 10:45
  */
 @Configuration
 @SuppressWarnings("unused")
-public class DubboApplicationConfig extends DubboBaseConfig{
+public class ConsumerDubboApplicationConfig extends CommonDubboBaseConfig {
 
     @Bean
     public ApplicationConfig application(){
         ApplicationConfig applicationConfig = new ApplicationConfig();
-        applicationConfig.setName("riceService");
+        applicationConfig.setName("consumer");
         return applicationConfig;
     }
 

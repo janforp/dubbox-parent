@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @SuppressWarnings("unused")
-public class DubboServiceExposeConfig {
+public class RiceDubboServiceExposeConfig {
 
     @Value("${service.timeout}")
     private String serviceTimeout;

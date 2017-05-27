@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
  * 该项目的 dubbo 统一配置
  */
 @Configuration
-public class DubboBaseConfig {
+public class CommonDubboBaseConfig {
 
 	@Value("${zk.host.port}")
 	private String zkHostPort;

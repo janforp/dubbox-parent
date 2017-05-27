@@ -1,8 +1,8 @@
-package com.janita.food.dubbox;
+package com.janita.rice.dubbox;
 
 import com.alibaba.dubbo.config.ApplicationConfig;
 import com.alibaba.dubbo.config.ProtocolConfig;
-import com.janita.api.dubbox.DubboBaseConfig;
+import com.janita.api.dubbox.CommonDubboBaseConfig;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -14,12 +14,12 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @SuppressWarnings("unused")
-public class DubboApplicationConfig extends DubboBaseConfig{
+public class RiceDubboApplicationConfig extends CommonDubboBaseConfig {
 
     @Bean
     public ApplicationConfig application(){
         ApplicationConfig applicationConfig = new ApplicationConfig();
-        applicationConfig.setName("foodService");
+        applicationConfig.setName("riceService");
         return applicationConfig;
     }
 
