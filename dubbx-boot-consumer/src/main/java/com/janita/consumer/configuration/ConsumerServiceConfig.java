@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import com.alibaba.dubbo.config.ApplicationConfig;
 import com.alibaba.dubbo.config.ProtocolConfig;
 import com.alibaba.dubbo.config.spring.ReferenceBean;
-import com.janita.api.configuration.DubboBaseConfig;
+import com.janita.api.dubbox.DubboBaseConfig;
 import com.janita.api.service.IFoodService;
 import com.janita.api.service.IRiceService;
 
