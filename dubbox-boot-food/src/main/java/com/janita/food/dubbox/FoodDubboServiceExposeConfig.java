@@ -1,6 +1,7 @@
 package com.janita.food.dubbox;
 
 import com.alibaba.dubbo.config.spring.ServiceBean;
+import com.janita.api.dubbox.CommonDubboBaseConfig;
 import com.janita.api.service.IFoodOutService;
 import com.janita.api.service.IFoodService;
 import org.springframework.beans.factory.annotation.Value;
@@ -13,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @SuppressWarnings("unused")
-public class FoodDubboServiceExposeConfig {
+public class FoodDubboServiceExposeConfig extends CommonDubboBaseConfig{
 
     @Value("${service.timeout}")
     private String serviceTimeout;

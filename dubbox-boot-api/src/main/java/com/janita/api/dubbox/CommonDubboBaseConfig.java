@@ -1,5 +1,7 @@
 package com.janita.api.dubbox;
 
+import com.alibaba.dubbo.config.ApplicationConfig;
+import com.alibaba.dubbo.config.ProtocolConfig;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 
@@ -27,5 +29,19 @@ public class CommonDubboBaseConfig {
 		registryConfig.setAddress(zkHostPort);
 		registryConfig.setProtocol(zkProtocol);
 		return registryConfig;
+	}
+
+	@Bean
+	public ApplicationConfig application(){
+		ApplicationConfig applicationConfig = new ApplicationConfig();
+		applicationConfig.setName("foodService");
+		return applicationConfig;
+	}
+
+	@Bean
+	public ProtocolConfig protocolConfig(){
+		ProtocolConfig protocolConfig = new ProtocolConfig();
+		protocolConfig.setPort(Integer.valueOf(dubboPort));
+		return protocolConfig;
 	}
 }
